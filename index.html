@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Futuristic Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sign-Up Page -->
+    <div id="signup-page" class="page">
+        <h1>Create an Account</h1>
+        <form id="signup-form">
+            <input type="text" id="signup-username" placeholder="Username" required>
+            <input type="password" id="signup-password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#" id="to-login">Log In</a></p>
+    </div>
+
+    <!-- Login Page -->
+    <div id="login-page" class="page hidden">
+        <h1>Welcome Back</h1>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Username" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button type="submit">Log In</button>
+        </form>
+        <p>Don't have an account? <a href="#" id="to-signup">Sign Up</a></p>
+    </div>
+
+    <!-- Main Content Page -->
+    <div id="main-page" class="page hidden">
+        <h1>Hello, <span id="user-name">User</span>!</h1>
+        <p>Welcome to your dashboard.</p>
+        <!-- Random Features -->
+        <div id="features">
+            <!-- We'll add some cool features here -->
+        </div>
+        <button id="logout-button">Log Out</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
